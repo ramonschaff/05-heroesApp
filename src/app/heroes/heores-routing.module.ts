@@ -5,10 +5,13 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
+import { HeroesModule } from './heroes.module';
+import { HeroesHomeComponent } from './pages/heroes-home/heroes-home.component';
 
 const rutas:Routes=[
   {
     path:'',
+    component: HeroesHomeComponent,
     children:[
       {
         path:'listado',
@@ -32,7 +35,7 @@ const rutas:Routes=[
       },
       {
         path:'**',
-        redirectTo:'listado'
+        redirectTo:'buscar'
       }
     ]
   }
