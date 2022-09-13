@@ -35,7 +35,7 @@ const rutas:Routes=[
       },
       {
         path:'**',
-        redirectTo:'buscar'
+        redirectTo:'listado'
       }
     ]
   }
