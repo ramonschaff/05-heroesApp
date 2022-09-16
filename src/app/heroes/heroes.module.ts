@@ -8,6 +8,9 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { HeoresRoutingModule } from './heores-routing.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MaterialModule } from '../material/material.module';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { PipesPipe } from './pipes.pipe';
+import { ImagenPipe } from './pipes/imagen.pipe';
 
 
 @NgModule({
@@ -16,7 +19,9 @@ import { MaterialModule } from '../material/material.module';
     BuscarComponent,
     HeroeComponent,
     HeroesHomeComponent,
-    ListadoComponent
+    ListadoComponent,
+    HeroeTarjetaComponent,
+    ImagenPipe
   ],
   imports: [
     CommonModule,
