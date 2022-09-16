@@ -11,7 +11,9 @@
              </button>
 
         </mat-toolbar>
-        <mat-nav-list color="warn">
+        <mat-nav-list 
+        (click)="sidenav.toggle()"
+        color="warn">
 
             <a routerLink="./listado"
                mat-list-item>
@@ -19,13 +21,13 @@
              <span>Listado de Heroes</span>
             </a>
 
-            <a routerLink="./listado"
+            <a routerLink="./agregar"
             mat-list-item>
             <mat-icon mat-list-icon>add</mat-icon>
           <span>Anadir Heroe</span>
          </a>
 
-         <a routerLink="./listado"
+         <a routerLink="./buscar"
          mat-list-item>
          <mat-icon mat-list-icon>search</mat-icon>
        <span>Buscar Heroe</span>
